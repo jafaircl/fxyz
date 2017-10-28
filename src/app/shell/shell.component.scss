@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins/_gradients.scss";
+
+header, main, footer {
+    width: 100%;
+}
+
+header {
+    height: 64px;
+}
+
+footer {
+    height: 300px;
+    // color: color-yiq(#4776E6);
+    // @include gradient-directional(#4776E6, #8E54E9);
+}
