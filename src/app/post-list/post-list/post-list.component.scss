@@ -1,0 +1,26 @@
+
+ul {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        padding: 24px;
+        border-radius: 4px;
+        margin-bottom: 24px;
+        width: calc(50% - 12px);
+
+        &:nth-of-type(odd) {
+            margin-right: 24px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+
+        & li {
+            width: 100%;
+        }
+    }
+}
