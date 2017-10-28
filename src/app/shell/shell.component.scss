@@ -13,7 +13,7 @@ header {
 main {
     margin: 16px auto;
     padding: 16px;
-    max-width: map-get($grid-breakpoints, 'lg');
+    max-width: map-get($grid-breakpoints, 'lg'); // 992px
 }
 
 footer {

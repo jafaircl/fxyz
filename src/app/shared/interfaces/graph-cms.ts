@@ -3,6 +3,7 @@ export interface BlogPost {
     postColor2: string;
     postDescription: string;
     postImage: string;
+    postSlug: string;
     postTitle: string;
 }
 

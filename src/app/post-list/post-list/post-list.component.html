@@ -1,8 +1,12 @@
 <h1>Posts</h1>
 <ul>
   <li *ngFor="let post of posts; let i = index;"
-      [style.backgroundImage]="setGradient(post.postColor1, post.postColor2, i)">
-    <h2>{{ post.postTitle }}</h2>
-    <p>{{ post.postDescription }}</p>
+      [style.backgroundImage]="setGradient(post.postColor1, post.postColor2, i)"
+      appExplodeAnimation
+      [destination]="'/posts/' + post.postTitle">
+    <div class="content">
+      <h2>{{ post.postTitle }}</h2>
+      <p>{{ post.postDescription }}</p>
+    </div>
   </li>
 </ul>

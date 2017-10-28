@@ -5,16 +5,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { GraphCmsService } from '../services/graph-cms.service';
 import { MetaTagService } from '../services/meta-tag.service';
 import { SafePipe } from '../pipes/safe.pipe';
+import { ExplodeAnimationDirective } from '../directives/explode-animation.directive';
 
 @NgModule({
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   exports: [
-    SafePipe
+    SafePipe,
+    ExplodeAnimationDirective
   ],
-  declarations: [SafePipe],
+  declarations: [SafePipe, ExplodeAnimationDirective],
   providers: [GraphCmsService, MetaTagService]
 })
 export class SharedModule { }

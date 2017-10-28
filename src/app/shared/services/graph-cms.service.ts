@@ -25,6 +25,7 @@ export class GraphCmsService {
             postColor1
             postColor2
             postDescription
+            postSlug
             postTitle
           }
         }
