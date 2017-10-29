@@ -11,8 +11,8 @@ export class ExplodeAnimationDirective {
     ExplodeAnimationDirective.prototype.offsetX = 0;
     ExplodeAnimationDirective.prototype.offsetY = 0;
     ExplodeAnimationDirective.prototype.aspectHeight = 100;
-    ExplodeAnimationDirective.prototype.duration = 390;
-    ExplodeAnimationDirective.prototype.curve = 'cubic-bezier(0.000, 0.405, 0.000, 1.285)';
+    ExplodeAnimationDirective.prototype.duration = 490;
+    ExplodeAnimationDirective.prototype.curve = 'cubic-bezier(0.175, 0.885, 0.32, 1.275)';
   })();
 
   @Input() destination: string;
@@ -39,9 +39,8 @@ export class ExplodeAnimationDirective {
     // create & insert placeholder
     const parentNode = this.renderer.parentNode(target);
     const placeholder = this.renderer.createElement(target.tagName);
-    const targetStyle = `width: ${props.width}; height: ${props.height}; ${target.getAttribute('style')}`;
+    const targetStyle = `background-image: none !important; width: ${props.width}px; height: ${props.height}px; ${target.getAttribute('style')}`;
     this.renderer.setAttribute(placeholder, 'style', targetStyle);
-    this.renderer.setStyle(placeholder, 'background-image', 'none');
     this.renderer.setAttribute(placeholder, 'class', target.className);
     this.renderer.insertBefore(parentNode, placeholder, target);
     // fix position of target

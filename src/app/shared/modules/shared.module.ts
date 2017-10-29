@@ -6,6 +6,7 @@ import { GraphCmsService } from '../services/graph-cms.service';
 import { MetaTagService } from '../services/meta-tag.service';
 import { SafePipe } from '../pipes/safe.pipe';
 import { ExplodeAnimationDirective } from '../directives/explode-animation.directive';
+import { TextBalancerService } from '../services/text-balancer.service';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { ExplodeAnimationDirective } from '../directives/explode-animation.direc
     ExplodeAnimationDirective
   ],
   declarations: [SafePipe, ExplodeAnimationDirective],
-  providers: [GraphCmsService, MetaTagService]
+  providers: [GraphCmsService, MetaTagService, TextBalancerService]
 })
 export class SharedModule { }
