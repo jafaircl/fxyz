@@ -27,7 +27,7 @@ export class PostListComponent implements OnInit {
     this.cms.getAllPosts()
         .subscribe((data: AllBlogPosts) => {
           this.posts = data.data.allBlogPosts;
-          this.balanceText();
+          setTimeout(() => this.balanceText(), 100);
         });
   }
 
